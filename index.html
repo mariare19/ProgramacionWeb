@@ -1,48 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Keywords-->
+	<meta name="description" content="Pagina donde se encuentran los lugares bonitos de Guatemala para visitar.">
+	<meta name="keywords" content="Guatemala,Viajes,Turismo,QueLindaGuate,ExplorandoGuatemala,QuePeladoGuate">
+	<meta name="author" content="Maria Renee Palma">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-	<title>Laboratorio 0</title>
+	<link href="css/carousel.css" rel="stylesheet">
+
+	<title>Lugares de Guate</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="navbar-wrapper">
 		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Laboratorio HTML, CSS & JS</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#">Home</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Music</h1>
-			<div class="btn-group btn-group-justified">
-				<a href="#" class="btn btn-primary">Estilo 1</a>
-				<a href="#" class="btn btn-danger">Estilo 2</a>
-				<a href="#" class="btn btn-success">Estilo 3</a>
-				<a href="#" class="btn btn-warning">Estilo 4</a>
-				<a href="#" class="btn btn-info">Estilo 5</a>
-			</div>
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Lugares Bonitos de Guate</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Inicio</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
 	</div>
 
-	<footer class="footer">
-		<div class="container">
-			<p class="text-muted">Place sticky footer content here.</p>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img class="first-slide" src="assets/AtitlanGuatemalaVisit.jpg" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Lago de Atitlán</h1>
+						<p>Antiguamente recibía el nombre de Laguna de Panajachel. En sus orillas se encuentran numerosos manantiales de agua
+							mineral y fuentes sulfurosas. Tiene a su alrededor varios pueblos que reciben los nombre de los apóstoles, así como
+							18 pequeñas islas.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="second-slide" src="assets/antigua.jpg" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Antigua Guatemala</h1>
+						<p>Ciudad en las montañas centrales de Guatemala, junto a los volcanes Agua, Fuego y Acatenango, que la rodean. Es famosa
+							por su bien preservada arquitectura renacentista española con fachadas barrocas del Nuevo Mundo, así como un gran
+							número de espectaculares ruinas de iglesias.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="third-slide" src="assets/tikal.jpg" alt="">
+				<div class="carousel-caption">
+					<h1>Tikal</h1>
+					<p>Es uno de los mayores yacimientos arqueológicos y centros urbanos de la civilización maya precolombina. Está situado
+						en el municipio de Flores, en el departamento de Petén, en el territorio actual de la República de Guatemala y forma
+						parte del Parque nacional Tikal, que fue declarado Patrimonio de la Humanidad, por Unesco, en 1979.</p>
+				</div>
+			</div>
 		</div>
-	</footer>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<div class="container marketing">
+		<div class="row">
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/semuc.jpg" alt="Generic placeholder image" width="140" height="140">
+				<h2>Semuc Chamey</h2>
+				<p>Enclave natural localizado próximo al municipio guatemalteco de Lanquín (12 km aprox. al sur de Lanquín), en el departamento
+					de Alta Verapaz, Guatemala. Consta con un mirador de 700 m de altura para observar los 350 m de largo de las pozas naturales
+					que conforman "Semuc Champey", con cataratas de hasta 40 pies de alto y todas las pozas alimentadas por riachuelos del
+					lugar. Fue declarado en 1999 Monumento Natural por el entonces presidente de la República de Guatemala.
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/castillo.jpg" alt="Generic placeholder image" width="140" height="140">
+				<h2>Castillo de San Felipe</h2>
+				<p>Una fortaleza ubicada en la embocadura del río Dulce con el Lago de Izabal en el oriente de Guatemala. Este castillo
+					tenía tres funciones: ser un fuerte militar, una prisión y además un centro aduanero. Además de dichas funciones, el
+					castillo cuenta con múltiples bodegas que servían como centro de intercambio comercial entre Guatemala y España. Lo
+					que más sobresale de su construcción es la Torre de Bustamante. Contiene diecinueve cañones -diecisiete de hierro y
+					dos de bronce.</p>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-circle" src="assets/playa.png" alt="Generic placeholder image" width="140" height="140">
+				<h2>Playa Blanca</h2>
+				<p>Está ubicada en el departamento de Izabal y se llega en lancha, tanto desde Livingston como desde Río Dulce o desde Puerto
+					Barrios. El viaje dura aproximadamente una hora o más dependiendo desde qué punto tomes la lancha. Playa Blanca es una
+					área privada y protegida pero permite el acceso público. Restringe toda actividad de construcción por lo que no hay
+					hoteles ni restaurantes en el lugar, el cual permanece como un santuario en su estado natural.</p>
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Cerro Tzankujil.
+					<span class="text-muted">Al agua!</span>
+				</h2>
+				<p class="lead">Es una reserva natural que ofrece muchas cosas por hacer, pero su principal atractivo esta la posibilidad de lanzarte
+					al lago de Atitlán desde una tarima de madera. Ubicado en San Marcos La Laguna, Sololá.</p>
+			</div>
+			<div class="col-md-5">
+				<img class="featurette-image img-responsive center-block" src="assets/Cerro-Tzankujil-885x500.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7 col-md-push-5">
+				<h2 class="featurette-heading">Flyboard.
+					<span class="text-muted">Lo mejor de Sololá!</span>
+				</h2>
+				<p class="lead">Esta es una de las actividades extremas más divertidas. En la que podrás volar sobre el agua, te elevarás y podrás observer
+					el hermoso lago de Atitlán.</p>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+				<img class="featurette-image img-responsive center-block" src="assets/flyboard.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Cenotes de Candelaria.
+					<span class="text-muted">Aguas Cristalinas!</span>
+				</h2>
+				<p class="lead">Son dos pozas de agua cristalina conectadas por una serie de ríos subterráneos, un destino simplemente impresionante.
+					Puedes nadar, bucear y acampar, ubicado en Huehuetenango</p>
+			</div>
+			<div class="col-md-5">
+				<img class="featurette-image img-responsive center-block" src="assets/Cenotes-de-Candelaria-885x500.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7 col-md-push-5">
+				<h2 class="featurette-heading">El Carnicero.
+					<span class="text-muted">La mejor hamburguesa en 4 Grados Norte.</span>
+				</h2>
+				<p class="lead">Es un lugar que seguro debe de conocer, la música es muy alegre y además, la comida es muy buena. Su especialidad son
+					los asados, y debe de probar su hamburguesa de lomito con puyazo, rellena de queso mozarella.</p>
+			</div>
+			<div class="col-md-5 col-md-pull-7">
+				<img class="featurette-image img-responsive center-block" src="assets/El-Carnicero11-885x500.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+		<footer>
+			<p class="pull-right">
+				<a href="#">Ir al Inicio</a>
+			</p>
+		</footer>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
