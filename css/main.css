@@ -1,0 +1,8 @@
+@font-face {
+	font-family: Slabo;
+	src: url(./Slabo27px-Regular.ttf);
+}
+
+body {
+    font-family:Slabo;
+}
