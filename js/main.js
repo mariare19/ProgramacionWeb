@@ -40,3 +40,7 @@ $(document).ready(function () {
         $(this).parent('li').addClass('active');
     });
 });
+
+function infoLugar(lugar) {
+    alert("Este lugar este en el departamento de: " + lugar.getAttribute("data-lugar"));
+}
